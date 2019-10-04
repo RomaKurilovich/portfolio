@@ -1,17 +1,44 @@
 .portfolioApp{
     display: grid;
+    grid-template-areas:
+    " myFoto firstInfo aboutMe myWorks contacts"
+    " myInfo myInfo myInfo myInfo myInfo"
+    "aboutMyContacts aboutMyContacts aboutMyContacts aboutMyContacts aboutMyContacts"
+    "aboutMyWorks aboutMyWorks aboutMyWorks aboutMyWorks aboutMyWorks";
+
     justify-content: center;
     background: #4AB6EE;
-
+    grid-area: mainMenu;
+    grid-template-rows: 150px 1fr ;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+    
         margin-left: auto;
         margin-right: auto;
-    grid-template-areas:
-    " myFoto  firstInfo aboutMe myWorks contacts"
+
+   
+}
+.aboutMyWorks{
+    grid-area: aboutMyWorks;
+    background: #A6C41F;
+    height: 300px;
+}
+.aboutMyContacts{
+    grid-area: aboutMyContacts;
+    background: #7B9F00;
+    height: 300px;
+}
+.myInfo{
+    grid-area: myInfo;
+    background: #4AB6EE;
+    height: 300px;
 }
 .app{
     margin-top: 100px;
     display: grid;
+    
+    grid-template-areas:
+    " mainMenu "
+    "myInfo";
 }
 .myFoto{
     grid-area: myFoto;
