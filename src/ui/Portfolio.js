@@ -5,6 +5,7 @@ import logoProfile from '../img/profileInfo.png';
 import contacts from '../img/contacts.png';
 import myWorks from '../img/myWorks.png';
 import myFoto from '../img/I.jpg';
+import MyFullInfo from './../ui/myInfo/myFullInfo';
 
 const block = {
     openInfoBlock: 'openInfoBlock',
@@ -43,9 +44,9 @@ let Portfolio = (props) => {
             }>
                 <MenuBlock logoProfile={contacts} colorHover='#929F68' selected={openBlock === block.openMyContactsBlock} color="#7B9F00" />
             </div>
-
+            
             {openBlock === block.openInfoBlock && <div className={style.myInfo}>
-                tut rodilsay tut uchilsay
+              <MyFullInfo/>
             </div>}
             {openBlock === block.openMyWorksBlock && <div className={style.aboutMyWorks}>
                 tut moi raboti
