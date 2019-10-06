@@ -28,17 +28,29 @@ let Portfolio = (props) => {
                 <div className={style.specialty}>Junior react developer</div>
             </div>
 
-            <div className={style.aboutMe} onClick={()=>setopenBlock(block.openInfoBlock)}> <MenuBlock logoProfile={logoProfile} color="#4AB6EE" /> </div>
-            <div className={style.myWorks} onClick={()=>setopenBlock(block.openMyWorksBlock)}> <MenuBlock logoProfile={myWorks} color="#A6C41F" /></div>
-            <div className={style.contacts} onClick={()=>setopenBlock(block.openMyContactsBlock)}> <MenuBlock logoProfile={contacts} color="#7B9F00" /></div>
+            <div className={style.aboutMe} onClick={
+                () => setopenBlock(block.openInfoBlock)
+            }> <MenuBlock logoProfile={logoProfile} colorHover='#87CCEE' selected={openBlock === block.openInfoBlock} color="#4AB6EE" />
+            </div>
 
-            { openBlock === block.openInfoBlock && <div className={style.myInfo}>
+            <div className={style.myWorks} onClick={
+                () => setopenBlock(block.openMyWorksBlock)
+            }> <MenuBlock logoProfile={myWorks} colorHover='#B6C479' selected={openBlock === block.openMyWorksBlock} color="#A6C41F" />
+            </div>
+
+            <div className={style.contacts} onClick={
+                () => setopenBlock(block.openMyContactsBlock)
+            }>
+                <MenuBlock logoProfile={contacts} colorHover='#929F68' selected={openBlock === block.openMyContactsBlock} color="#7B9F00" />
+            </div>
+
+            {openBlock === block.openInfoBlock && <div className={style.myInfo}>
                 tut rodilsay tut uchilsay
             </div>}
-            { openBlock === block.openMyWorksBlock && <div className={style.aboutMyWorks}>
+            {openBlock === block.openMyWorksBlock && <div className={style.aboutMyWorks}>
                 tut moi raboti
             </div>}
-            { openBlock === block.openMyContactsBlock && <div className={style.aboutMyContacts}>
+            {openBlock === block.openMyContactsBlock && <div className={style.aboutMyContacts}>
                 tut moi kinacti
             </div>}
         </div>
