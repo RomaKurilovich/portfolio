@@ -14,18 +14,32 @@ let MenuBlock = (props) => {
     useEffect(()=>{
         if (props.selected) {
             setCursore('default')
-        } else setCursore('pointer')
+            setColor('#FFFFFF')
+        } else {
+            setCursore('pointer')
+            setColor(props.color)
+        }
     }, [props.selected])
 
     let mouseOver = () =>{
         if (!props.selected){
             setColor(props.colorHover)
-        }
+        } 
+    }
+    let mouseOut = () => {
+        if (props.selected) {
+            setColor('#ffffff')
+        } else setColor(props.color)
+    }
+    let click = () => {
+        if (props.selected){
+            setColor('#ffffff')
+        } else setColor(props.color)
     }
 
-    return <div style={{background: color, cursor: cursor }} onMouseOver={mouseOver} onClick={()=>setColor(props.color)} onMouseOut={()=>setColor(props.color)} className={style.menuBlock}>
+    return <div style={{background: color, cursor: cursor }} onMouseOver={mouseOver} onClick={click} onMouseOut={mouseOut} className={style.menuBlock}>
         <div className={style.logo}>
-            <img src={props.logoProfile} />
+            <img src={props.logo} />
         </div>
     </div>
 }
