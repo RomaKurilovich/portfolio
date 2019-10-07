@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './myFullInfo.module.css';
 
-let MyFullInfo = (props) => {
+let MyFullInfo = () => {
     return <div className={style.myInfo}>
         <div>
             <div className={style.headline}> ОБРАЗОВАНИЕ </div>

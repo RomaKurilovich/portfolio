@@ -14,7 +14,7 @@ const SelectedWork = {
     socialNetwork: 'socialNetwork'
 }
 
-let MyWorks = (props) => {
+let MyWorks = () => {
 
     const [selectedWork, setSelectedWork] = useState(SelectedWork.portfolio);
 
@@ -37,7 +37,7 @@ let MyWorks = (props) => {
                             React, hooks, grid, module css.
                     </div>
                     </div>
-                    <div className={style.portfolioImg}> <img src={portfolio}></img> </div>
+                    <div className={style.portfolioImg}> <img alt="portfolio" src={portfolio}></img> </div>
                 </div>}
 
 
@@ -49,7 +49,7 @@ let MyWorks = (props) => {
                             React, redux, selectors, classes, thunk, axios, styled-components.
                     </div>
                     </div>
-                    <div className={style.portfolioImg}> <img src={todo}></img> </div>
+                    <div className={style.portfolioImg}> <img alt="portfolio" src={todo}></img> </div>
                 </div>}
 
 
@@ -61,7 +61,7 @@ let MyWorks = (props) => {
                             React, redux, localStorage, axios, hooks, thunk, grid.
                     </div>
                     </div>
-                    <div className={style.portfolioImg}> <img src={weather}></img> </div>
+                    <div className={style.portfolioImg}> <img alt="portfolio" src={weather}></img> </div>
                 </div>}
 
 
@@ -73,7 +73,7 @@ let MyWorks = (props) => {
                             React, redux, typescript, classes, hooks, thunk, redux-form, axios, grid, flex, styled-components, module css.
                     </div>
                     </div>
-                    <div className={style.portfolioImg}> <img src={socialnetwork}></img> </div>
+                    <div className={style.portfolioImg}> <img alt="portfolio" src={socialnetwork}></img> </div>
                 </div>}
             </div>
         </div>

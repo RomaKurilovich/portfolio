@@ -1,17 +1,17 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import style from './MenuBlock.module.css';
 
 
 let MenuBlock = (props) => {
-    debugger
+
     const [color, setColor] = useState('')
     const [cursor, setCursore] = useState('pointer')
 
-    useEffect(()=>{
+    useEffect(() => {
         setColor(props.color)
     }, [props.color])
 
-    useEffect(()=>{
+    useEffect(() => {
         if (props.selected) {
             setCursore('default')
             setColor('#FFFFFF')
@@ -21,10 +21,10 @@ let MenuBlock = (props) => {
         }
     }, [props.selected])
 
-    let mouseOver = () =>{
-        if (!props.selected){
+    let mouseOver = () => {
+        if (!props.selected) {
             setColor(props.colorHover)
-        } 
+        }
     }
     let mouseOut = () => {
         if (props.selected) {
@@ -32,14 +32,18 @@ let MenuBlock = (props) => {
         } else setColor(props.color)
     }
     let click = () => {
-        if (props.selected){
+        if (props.selected) {
             setColor('#ffffff')
         } else setColor(props.color)
     }
 
-    return <div style={{background: color, cursor: cursor }} onMouseOver={mouseOver} onClick={click} onMouseOut={mouseOut} className={style.menuBlock}>
+    return <div style={{ background: color, cursor: cursor }}
+     onMouseOver={mouseOver} 
+     onClick={click} 
+     onMouseOut={mouseOut} 
+     className={style.menuBlock}>
         <div className={style.logo}>
-            <img src={props.logo} />
+            <img alt="logo" src={props.logo} />
         </div>
     </div>
 }
