@@ -39,7 +39,7 @@ let MenuBlock = (props) => {
 
     return <div style={{background: color, cursor: cursor }} onMouseOver={mouseOver} onClick={click} onMouseOut={mouseOut} className={style.menuBlock}>
         <div className={style.logo}>
-            <img src={props.logo} />
+            <img src={props.logo}/>
         </div>
     </div>
 }
