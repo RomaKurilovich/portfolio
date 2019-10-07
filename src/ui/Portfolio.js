@@ -20,15 +20,13 @@ const block = {
     closedAll: 'closedAll',
 }
 
-
-
-let Portfolio = (props) => {
+let Portfolio = () => {
 
     const [openBlock, setopenBlock] = useState(block.closedAll);
 
     return <div className={style.app}>
         <div className={style.portfolioApp}>
-            <div className={style.myFoto}> <img src={myFoto} /> </div>
+            <div className={style.myFoto}> <img alt="Roma Kurilovich" src={myFoto} /> </div>
             <div className={style.firstInfo}>
                 <div className={style.name}>Roma</div>
                 <div className={style.name}>kurilovich</div>
@@ -37,27 +35,27 @@ let Portfolio = (props) => {
 
             <div className={style.aboutMe} onClick={
                 () => setopenBlock(block.openInfoBlock)
-            }> <MenuBlock logo={openBlock === block.openInfoBlock ? logoProfileColor : logoProfileWhite } colorHover='#87CCEE' selected={openBlock === block.openInfoBlock} color="#4AB6EE" />
+            }> <MenuBlock logo={openBlock === block.openInfoBlock ? logoProfileColor : logoProfileWhite} colorHover='#87CCEE' selected={openBlock === block.openInfoBlock} color="#4AB6EE" />
             </div>
 
             <div className={style.myWorks} onClick={
                 () => setopenBlock(block.openMyWorksBlock)
-            }> <MenuBlock logo={ openBlock === block.openMyWorksBlock ? myWorksColor : myWorksWhite} colorHover='#B6C479' selected={openBlock === block.openMyWorksBlock} color="#A6C41F" />
+            }> <MenuBlock logo={openBlock === block.openMyWorksBlock ? myWorksColor : myWorksWhite} colorHover='#B6C479' selected={openBlock === block.openMyWorksBlock} color="#A6C41F" />
             </div>
 
             <div className={style.contacts} onClick={
                 () => setopenBlock(block.openMyContactsBlock)
-            }><MenuBlock logo={ openBlock === block.openMyContactsBlock ? contactsColor : contactsWhite} colorHover='#929F68' selected={openBlock === block.openMyContactsBlock} color="#7B9F00" />
+            }><MenuBlock logo={openBlock === block.openMyContactsBlock ? contactsColor : contactsWhite} colorHover='#929F68' selected={openBlock === block.openMyContactsBlock} color="#7B9F00" />
             </div>
-            
+
             {openBlock === block.openInfoBlock && <div className={style.myInfo}>
-              <MyFullInfo/>
+                <MyFullInfo />
             </div>}
             {openBlock === block.openMyWorksBlock && <div className={style.aboutMyWorks}>
-               <MyWorks/>
+                <MyWorks />
             </div>}
             {openBlock === block.openMyContactsBlock && <div className={style.aboutMyContacts}>
-                <MyContacts/>
+                <MyContacts />
             </div>}
         </div>
 
