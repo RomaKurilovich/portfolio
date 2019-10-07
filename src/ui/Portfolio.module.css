@@ -20,7 +20,6 @@
 .aboutMyWorks{
     grid-area: aboutMyWorks;
     background: #FFFFFF;
-    height: 300px;
 }
 .aboutMyContacts{
     grid-area: aboutMyContacts;

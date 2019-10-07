@@ -2,3 +2,46 @@
     display: flex;
     padding: 40px;
 }
+
+.myWork{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 60px 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+.allMyWorks{
+    padding: 55px;
+    margin-top: -35px;
+    color: #47B6E7;
+    font-weight: normal;
+    font-size: 20px;
+}
+.allMyWorks a{
+    color: #9D9B9D;
+}
+.portfolioImg img{
+    width: 400px;
+    border-radius: 10px;
+    border: solid 2px #47B6E7;
+}
+.technology{
+    max-width: 230px;
+}
+.technologySpan{
+    font-size: 23px;
+}
+.technologyStack{
+    color: #9D9B9D;
+    font-weight: normal;
+    margin-top: 10px;
+}
+.statusRes{
+    color: #9D9B9D;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.status{
+    display: flex;
+    max-width: 230px;
+}

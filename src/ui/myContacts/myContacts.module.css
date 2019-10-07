@@ -1,0 +1,14 @@
+.contacts{
+    text-align: center;
+    font-weight: normal;
+    color: #47B6E7;
+    font-size: 40px;
+}
+.myContacts{
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myContacts div{
+    padding: 10px;
+}

@@ -10,6 +10,7 @@ import myWorksColor from '../img/myWorksColor.png';
 import myFoto from '../img/I.jpg';
 import MyFullInfo from './../ui/myInfo/myFullInfo';
 import MyWorks from './myWorks/myWorks';
+import MyContacts from './myContacts/myContacts';
 
 
 const block = {
@@ -56,7 +57,7 @@ let Portfolio = (props) => {
                <MyWorks/>
             </div>}
             {openBlock === block.openMyContactsBlock && <div className={style.aboutMyContacts}>
-                tut moi kinacti
+                <MyContacts/>
             </div>}
         </div>
 
