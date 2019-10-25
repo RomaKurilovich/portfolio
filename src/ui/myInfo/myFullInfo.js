@@ -7,24 +7,23 @@ let MyFullInfo = () => {
             <div className={style.headline}> ОБРАЗОВАНИЕ </div>
             <div className={style.justText}>
                 Неоконченное высшее. Учился в БГУИРе на ФИТУ на специальности АСОИ.
-                Не сдал вовремя зачет из-за чего был не допущен к сдаче экзаменов.
-                Забрал документы не закрыв вторую сессию. (С армией проблем нет)
+                (С армией проблем нет)
                 </div>
         </div>
         <div>
             <div className={style.headline}> ОБО МНЕ </div>
             <div className={style.justText}>
-                Изучаю веб около года, за это время сделал несколько небольших проектов на react (не коммерческих),
-                немного знаком с C++ (матрицы, ссылки, циклы, if else),
-                пару раз трогал node js express mongodb. Ищу работу как frontend developer,
-                но в планах на будущее стать full stack developer
+            Frondend разработчик, участвовал в разработке нескольких проектов на react,
+             базовые знания C++ (матрицы, ссылки, циклы, if else),
+              базовые знания node js express mongodb. 
+              Рассматриваю предложения на full time с официальным трудоустройством.
                 </div>
         </div>
         <div>
             <div className={style.headline}> КЛЮЧЕВЫЕ НАВЫКИ </div>
             <div className={style.justText}>
-                React, Redux, axios, thunk, typescript, hooks, classes,
-                selectors/reselect, LocalStorage, понимание flux архитектуры, module css, grid, flexbox, styled-components.
+                React, Redux, javascript, axios, thunk, typescript, hooks, classes, RestAPI, async/await, promises, git,
+                reselect, LocalStorage, flux, module css, grid, flexbox, styled-components.
                 </div>
         </div>
         <div>

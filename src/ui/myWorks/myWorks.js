@@ -31,7 +31,10 @@ let MyWorks = () => {
 
                 {selectedWork === SelectedWork.portfolio && <div className={style.myWork}>
                     <div className={style.status}><div className={style.statusSpan}>Status:</div> <div className={style.statusRes}>completed</div></div>
-                    <div>Link: <a href="https://romakurilovich.github.io/portfolio/">romakurilovich.github.io/portfolio/</a></div>
+                    <div>
+                        <div>Demo: <a href="https://romakurilovich.github.io/portfolio/">romakurilovich.github.io/portfolio/</a></div>
+                        <div>Source: <a href="https://github.com/RomaKurilovich/portfolio">github.com/RomaKurilovich/portfolio</a></div>
+                    </div>
                     <div className={style.technology}> <div className={style.technologySpan}>Technology stack:</div>
                         <div className={style.technologyStack}>
                             React, hooks, grid, module css.
@@ -43,10 +46,13 @@ let MyWorks = () => {
 
                 {selectedWork === SelectedWork.todo && <div className={style.myWork}>
                     <div className={style.status}><div className={style.statusSpan}>Status:</div> <div className={style.statusRes}>completed</div></div>
-                    <div>Link: <a href="https://romakurilovich.github.io/todo-app/">romakurilovich.github.io/todo-app/</a></div>
+                    <div>
+                        <div>Demo: <a href="https://romakurilovich.github.io/todo-app/">romakurilovich.github.io/todo-app/</a></div>
+                        <div>Source: <a href="https://github.com/RomaKurilovich/todo-app">github.com/RomaKurilovich/todo-app</a></div>
+                    </div>
                     <div className={style.technology}> <div className={style.technologySpan}>Technology stack:</div>
                         <div className={style.technologyStack}>
-                            React, redux, selectors, classes, thunk, axios, styled-components.
+                            React, redux, RestAPI, selectors, classes, thunk, axios, styled-components.
                     </div>
                     </div>
                     <div className={style.portfolioImg}> <img alt="portfolio" src={todo}></img> </div>
@@ -55,10 +61,13 @@ let MyWorks = () => {
 
                 {selectedWork === SelectedWork.weatherApp && <div className={style.myWork}>
                     <div className={style.status}><div className={style.statusSpan}>Status:</div> <div className={style.statusRes}>completed</div></div>
-                    <div>Link: <a href="https://romakurilovich.github.io/weather-app-for-test/">romakurilovich.github.io/weather-app-for-test/</a></div>
+                    <div>
+                        <div>Demo: <a href="https://romakurilovich.github.io/weather-app-for-test/">romakurilovich.github.io/weather-app-for-test/</a></div>
+                        <div>Source: <a href="https://github.com/RomaKurilovich/weather-app-for-test">github.com/RomaKurilovich/weather-app-for-test</a></div>
+                    </div>
                     <div className={style.technology}> <div className={style.technologySpan}>Technology stack:</div>
                         <div className={style.technologyStack}>
-                            React, redux, localStorage, axios, hooks, thunk, grid.
+                            React, redux, RestAPI, localStorage, axios, hooks, thunk, grid.
                     </div>
                     </div>
                     <div className={style.portfolioImg}> <img alt="portfolio" src={weather}></img> </div>
@@ -67,10 +76,13 @@ let MyWorks = () => {
 
                 {selectedWork === SelectedWork.socialNetwork && <div className={style.myWork}>
                     <div className={style.status}><div className={style.statusSpan}>Status:</div> <div className={style.statusRes}>On development stage</div></div>
-                    <div>Link: <a href="https://romakurilovich.github.io/social-network/#/profile/1043">romakurilovich.github.io/social-network/#/</a></div>
+                    <div>
+                        <div>Demo: <a href="https://romakurilovich.github.io/social-network/#/login">romakurilovich.github.io/social-network/#/</a></div>
+                        <div>Source: <a href="https://github.com/RomaKurilovich/social-network">github.com/RomaKurilovich/social-network</a></div>
+                    </div>
                     <div className={style.technology}> <div className={style.technologySpan}>Technology stack:</div>
                         <div className={style.technologyStack}>
-                            React, redux, typescript, classes, hooks, thunk, redux-form, axios, grid, flex, styled-components, module css.
+                            React, redux, RestAPI, typescript, classes, hooks, thunk, redux-form, axios, grid, flex, styled-components, module css.
                     </div>
                     </div>
                     <div className={style.portfolioImg}> <img alt="portfolio" src={socialnetwork}></img> </div>

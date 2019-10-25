@@ -22,7 +22,7 @@ const block = {
 
 let Portfolio = () => {
 
-    const [openBlock, setopenBlock] = useState(block.closedAll);
+    const [openBlock, setopenBlock] = useState(block.openInfoBlock);
 
     return <div className={style.app}>
         <div className={style.portfolioApp}>
