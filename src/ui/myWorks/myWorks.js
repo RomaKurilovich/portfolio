@@ -52,7 +52,7 @@ let MyWorks = () => {
                     </div>
                     <div className={style.technology}> <div className={style.technologySpan}>Technology stack:</div>
                         <div className={style.technologyStack}>
-                            React, redux, RestAPI, selectors, classes, thunk, axios, styled-components.
+                            React, redux, RestAPI, nodejs, express, mongodb, heroku, selectors, classes, thunk, axios, styled-components.
                     </div>
                     </div>
                     <div className={style.portfolioImg}> <img alt="portfolio" src={todo}></img> </div>
